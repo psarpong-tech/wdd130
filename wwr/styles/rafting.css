@@ -74,7 +74,7 @@ h1 {
     width: 125px;
     border: 1px solid #0f2027;
     margin: 10px;
-    box-shadow: #264653;
+    box-shadow: 0 4px 6px #264653;
 }
 
 .hero article {
