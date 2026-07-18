@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #055a05;
+    --primary-color: #0f2027;
     /*forest green*/
-    --secondary-color: #f4a261;
+    --secondary-color: rgb(26, 54, 93);
     /*warm sand*/
-    --accent1-color: #264653;
+    --accent1-color: rgb(255, 89, 12);
     /*dark slate blue*/
-    --accent2-color: #e9c46a;
+    --accent2-color: #f4f7f6;
     /*light golden yellow*/
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -19,7 +19,8 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    background-color: var(--accent2-color);
+    color: #2d3748;
 }
 
 header,
@@ -71,7 +72,26 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
-    border: 1px solid peru;
+    border: 1px solid #0f2027;
     margin: 10px;
     box-shadow: #264653;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    left: 20px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    color: var(--accent2-color);
+    opacity: 90%;
+}
+
+header {
+    background-color: var(--accent2-color);
+}
+
+nav a {
+    font-weight: bold;
 }
