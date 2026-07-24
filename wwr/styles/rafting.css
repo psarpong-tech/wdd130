@@ -1,13 +1,18 @@
 :root {
     --primary-color: #0f2027;
-    /*forest green*/
-    --secondary-color: rgb(26, 54, 93);
-    /*warm sand*/
-    --accent1-color: rgb(255, 89, 12);
-    /*dark slate blue*/
+    --secondary-color: #1a365d;
+    --accent1-color: #ff590c;
     --accent2-color: #f4f7f6;
-    /*light golden yellow*/
-    --heading-font: "Times New Roman", "Georgia", serif;
+
+    --text-color: #2d3748;
+    --white: #ffffff;
+    --light-gray: #edf2f7;
+    --medium-gray: #999999;
+    --dark-gray: #666666;
+    --border-light: #cccccc;
+    --shadow-color: #264653;
+
+    --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -20,7 +25,7 @@
 body {
     font-family: var(--body-font);
     background-color: var(--accent2-color);
-    color: #2d3748;
+    color: var(--text-color);
 }
 
 header,
@@ -59,7 +64,7 @@ article {
 
 .hero {
     position: relative;
-    border: 1px solid #999;
+    border: 1px solid var(--medium-gray);
     margin: 20px 0;
 }
 
@@ -83,9 +88,9 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
-    border: 1px solid #0f2027;
+    border: 1px solid var(--primary-color);
     margin: 10px;
-    box-shadow: 0 4px 6px #264653;
+    box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 .hero article {
@@ -97,7 +102,7 @@ h1 {
     background-color: var(--secondary-color);
     padding: 10px;
     color: var(--accent2-color);
-    opacity: 90%;
+    opacity: 0.9;
 }
 
 header {
@@ -105,8 +110,8 @@ header {
     grid-template-columns: 150px 1fr;
     align-items: center;
     padding: 16px 10px;
-    background-color: #edf2f7;
-    border: 1px solid #999;
+    background-color: var(--light-gray);
+    border: 1px solid var(--medium-gray);
     margin: 20px auto;
 }
 
@@ -116,12 +121,12 @@ nav a {
     color: var(--primary-color);
     font-weight: bold;
     padding: 12px 28px;
-    background-color: #ffffff;
-    border: 1px solid #666;
+    background-color: var(--white);
+    border: 1px solid var(--dark-gray);
 }
 
 .hero article h2 {
-    color: #ffffff;
+    color: var(--white);
 }
 
 header img {
@@ -137,8 +142,7 @@ nav ul {
 
 nav a:hover {
     background-color: var(--accent1-color);
-    color: #ffffff;
-
+    color: var(--white);
 }
 
 .history {
@@ -201,13 +205,13 @@ footer {
     align-items: center;
     margin-top: 20px;
     padding: 15px 40px;
-    background-color: #edf2f7;
-    border: 1px solid #ccc;
+    background-color: var(--light-gray);
+    border: 1px solid var(--border-light);
 }
 
 section {
-    border: 1px solid #999;
+    border: 1px solid var(--medium-gray);
     margin: 20px 0;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--white);
 }
