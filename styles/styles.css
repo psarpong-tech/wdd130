@@ -21,17 +21,26 @@ body {
 nav {
     background-color: var(--heading-background-color);
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 10px;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: var(--heading-background-color);
-    padding: .5rem;
+    border-bottom: 1px solid black;
+    margin: 15px 0;
+    text-align: var(--text-align);
+
 }
 
 img {
@@ -47,7 +56,6 @@ p {
 }
 
 main {
-    max-width: 650px;
     padding: 1rem;
 }
 
@@ -101,4 +109,26 @@ footer {
 
 .right-space {
     padding: 2rem;
+}
+
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid main {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.grid aside {
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
