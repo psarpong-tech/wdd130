@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #2f2f2f;
+    background-color: #f5f7fa;
+}
+
+header {
+    margin: 0 auto;
+    width: 670px;
+}
+
+h1 {
+    margin: 1.2rem;
+    font-size: 1.8rem;
+    color: #0b4f6c;
+    text-align: center;
+}
+
+form {
+    width: 690px;
+    margin: 0 auto;
+    padding: 1.3rem;
+    border: 1px solid #c9d6df;
+    border-radius: 11px;
+    background-color: #eef4f8;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: .6rem;
+    margin: .6rem;
+    border: 1px solid #b8c5d6;
+    padding: 1.1rem;
+    border-radius: 6px;
+}
+
+legend {
+    color: #0b4f6c;
+    font-size: 1rem;
+    padding: 0 .4rem;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: .4rem;
+    font-size: .8rem;
+    border: 1px solid #9ea7b3;
+    border-radius: 3px;
+}
+
+label {
+    text-align: right;
+    padding-right: .6rem;
+    font-weight: 600;
+}
+
+input[type="checkbox"] {
+    width: 17px;
+    width: 17px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem auto;
+    background-color: #0b4f6c;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: .7rem 1.7rem;
+    font-size: .9rem;
+}
+
+button:hover {
+    background-color: #0f6d92;
+}
+
+footer {
+    margin: 1.4rem auto;
+    width: 680px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+    border-top: 1px solid #c9d6df;
+    padding: .6rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: .5rem 0;
+}
