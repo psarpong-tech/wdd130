@@ -41,6 +41,17 @@ h2 {
     color: var(--primary-color);
 }
 
+main > h1 {
+    position: static;
+    background: none;
+    opacity: 1;
+    width: auto;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+    color: var(--primary-color);
+}
+
 nav,
 p,
 section,
@@ -74,7 +85,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -175,28 +186,42 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.adventure-gallery {
+.adventure-gallery,
+.employee-gallery {
     display: flex;
     justify-content: space-between;
     gap: 15px;
 }
 
-.adventure-gallery figure {
+.adventure-gallery figure,
+.employee-gallery figure {
     flex: 1;
     text-align: center;
 }
 
-.adventure-gallery img {
+.adventure-gallery img,
+.employee-gallery img {
     width: 100%;
-    height: 120px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.adventure-gallery figcaption {
+.adventure-gallery img {
+    height: 120px;
+}
+
+.employee-gallery img {
+    height: 200px;
+}
+
+.adventure-gallery figcaption,
+.employee-gallery figcaption {
     margin-top: 8px;
-    font-size: 0.9rem;
     font-weight: bold;
+}
+
+.adventure-gallery figcaption {
+    font-size: 0.9rem;
 }
 
 footer {
@@ -214,4 +239,138 @@ section {
     margin: 20px 0;
     padding: 20px;
     background-color: var(--white);
+}
+
+.company-info {
+    text-align: center;
+}
+
+.company-info h2 {
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    margin-top: 25px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 360px;
+    border: 1px solid var(--border-light);
+}
+
+.contact-form {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 12px;
+    align-items: start;
+}
+
+.form-row > label {
+    font-weight: bold;
+    text-align: left;
+    padding-top: 8px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-light);
+    border-radius: 3px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.newsletter input {
+    width: auto;
+}
+
+button {
+    width: 170px;
+    padding: 10px;
+    background: var(--accent1-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--secondary-color);
+}
+
+.employees {
+    text-align: center;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.employee-gallery figure {
+    flex: 1;
+}
+
+.employee-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.employee-gallery figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
