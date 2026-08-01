@@ -202,25 +202,15 @@ nav a:hover {
 
 .adventure-gallery img {
     width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.adventure-gallery img {
-    width: 100%;
     height: 120px;
     object-fit: cover;
     border-radius: 8px;
 
 }
 
-.adventure-gallery figcaption,
-.employee-gallery figcaption {
+.adventure-gallery figcaption {
     margin-top: 8px;
     font-weight: bold;
-}
-
-.adventure-gallery figcaption {
     font-size: 0.9rem;
 }
 
